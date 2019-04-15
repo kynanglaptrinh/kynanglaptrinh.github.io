@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Kỹ Năng Lập Trình</title>
+    <link>https://kynanglaptrinh.com/categories/</link>
+    <description>Recent content in Categories on Kỹ Năng Lập Trình</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-vn</language>
+    
+	<atom:link href="https://kynanglaptrinh.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lap Trinh Java</title>
+      <link>https://kynanglaptrinh.com/lap-trinh-java/</link>
+      <pubDate>Mon, 15 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/lap-trinh-java/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

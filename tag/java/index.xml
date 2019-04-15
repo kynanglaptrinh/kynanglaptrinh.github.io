@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Kỹ Năng Lập Trình</title>
+    <link>https://kynanglaptrinh.com/tag/java/</link>
+    <description>Recent content in Java on Kỹ Năng Lập Trình</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 15 Apr 2019 14:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://kynanglaptrinh.com/tag/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Viết Chương Trình Java Hello World với Notepad và Command Line</title>
+      <link>https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/</link>
+      <pubDate>Mon, 15 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/</guid>
+      <description>Trong bài viết này tôi sẽ hướng dẫn bạn cách viết một chương trình Java đơn giản bằng cách sử dụng các công cụ có sẵn trên hệ điều hành Windows là Notepad và giao diện dòng lệnh Command Line.
+Trước tiên để có thể biên dịch và chạy chương trình Java bạn cần phải cài đặt JDK, có thể tải ở link sau: JDK
+Bước 1 Bạn cần tạo file HelloWorld.</description>
+    </item>
+    
+  </channel>
+</rss>

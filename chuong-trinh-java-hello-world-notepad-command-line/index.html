@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Viết Chương Trình Java Hello World với Notepad và Command Line | Kỹ Năng Lập Trình</title>
+    <meta name="title" content="Viết Chương Trình Java Hello World với Notepad và Command Line | Kỹ Năng Lập Trình">
+    <meta name="description" content="Trong bài viết này tôi sẽ hướng dẫn bạn cách viết một chương trình Java đơn giản bằng cách sử dụng các công cụ có sẵn trên hệ điều hành Windows là Notepad và giao diện dòng lệnh Command Line.">
+    <meta name="author" content="kynanglaptrinh.com@gmail.com">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/">
+    <meta property="og:title" content="Viết Chương Trình Java Hello World với Notepad và Command Line | Kỹ Năng Lập Trình">
+    <meta property="og:description" content="Trong bài viết này tôi sẽ hướng dẫn bạn cách viết một chương trình Java đơn giản bằng cách sử dụng các công cụ có sẵn trên hệ điều hành Windows là Notepad và giao diện dòng lệnh Command Line.">
+    <meta property="og:image" content="https://kynanglaptrinh.com/images/lap-trinh-java-voi-notepad.png">
+
+    <meta property="twitter:card" content="https://kynanglaptrinh.com/images/lap-trinh-java-voi-notepad.png">
+    <meta property="twitter:url" content="https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/">
+    <meta property="twitter:title" content="Viết Chương Trình Java Hello World với Notepad và Command Line | Kỹ Năng Lập Trình">
+    <meta property="twitter:description" content="Trong bài viết này tôi sẽ hướng dẫn bạn cách viết một chương trình Java đơn giản bằng cách sử dụng các công cụ có sẵn trên hệ điều hành Windows là Notepad và giao diện dòng lệnh Command Line.">
+    <meta property="twitter:image" content="https://kynanglaptrinh.com/images/lap-trinh-java-voi-notepad.png">
+    <link href="https://kynanglaptrinh.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://kynanglaptrinh.com/css/style.min.css?version=1" integrity="" media="screen" />
+</head><body>
+            <div class="container"><header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-left">
+            <a href="https://kynanglaptrinh.com/">
+                <img src="https://kynanglaptrinh.com/images/logo.png" alt="logo" width="200px" />
+            </a>
+        </div>
+    </div>
+</header>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex main-menu">
+        <a class="p-2" href="https://kynanglaptrinh.com/">Trang Chủ</a>
+        <a class="p-2" href="https://kynanglaptrinh.com//lap-trinh-java/">Lập Trình Java</a>
+    </nav>
+</div>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Viết Chương Trình Java Hello World với Notepad và Command Line</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Trong bài viết này tôi sẽ hướng dẫn bạn cách viết một chương trình Java đơn giản bằng cách sử dụng các công cụ có sẵn trên hệ điều hành Windows là Notepad và giao diện dòng lệnh Command Line.</p>
+
+<p>Trước tiên để có thể biên dịch và chạy chương trình Java bạn cần phải cài đặt JDK, có thể tải ở link sau: <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">JDK</a></p>
+
+<h4 id="bước-1">Bước 1</h4>
+
+<p>Bạn cần tạo file HelloWorld.java, trong ví dụ này tôi sẽ tạo trong thư mục D:\JavaPractices như hình bên dưới.</p>
+
+<p><img src="/images/tao-file-hello-world-java.png" alt="Tạo file HelloWorld.java" title="Tạo file HelloWorld.java" class="img-fluid"></p>
+
+<h4 id="bước-2">Bước 2</h4>
+
+<p>Mở file HelloWorld.java trên bằng Notepad và viết code cho chương trình Java như bên dưới.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello World&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span> 
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Mục đích của chương trình Java này chỉ đơn gian in ra màn hình dòng chữ Hello World khi bạn thực thi chương trình.</p>
+
+<p><img src="/images/chuong-trinh-hello-world.png" alt="Code chương trình HelloWorld.java" title="Code chương trình HelloWorld.java" class="img-fluid"></p>
+
+<h4 id="bước-3">Bước 3</h4>
+
+<p>Mở chương trình Command Line cmd.exe để biên dịch và chạy chương trình bạn đã viết ở bước trước.
+Để mở Command Line trên Windows bạn có thể sử dụng một trong những cách sau</p>
+
+<p><strong>Cách 1:</strong> Trên giao diện của File Explorer bạn click vào thanh địa chỉ của thư mục, gõ cmd và Enter.</p>
+
+<p><img src="/images/mo-cmd-tren-file-explorer.png" alt="Mở cmd từ File Explorer" title="Mở cmd từ File Explorer" class="img-fluid"></p>
+
+<p><strong>Cách 2:</strong> Dùng tổ hợp phím Windows + R để mở cửa sổ Run, gõ vào cmd và Enter.</p>
+
+<p><img src="/images/mo-cmd-bang-run.png" alt="Mở cmd từ cửa sổ Run" title="Mở cmd từ cửa sổ Run" class="img-fluid"></p>
+
+<p>Sau khi giao diện dòng lệnh được mở bạn cần di chuyển đến thư mục chứa file mã nguồn Java bằng lệnh</p>
+
+<pre><code>D: 
+cd D:\JavaPractices
+</code></pre>
+
+<p>Sau khi mở giao diện dòng lệnh và di chuyển đến thư mục chứa mã nguồn, tiếp đến chúng ta cần biên dịch file HelloWorld.java bằng dòng lệnh</p>
+
+<pre><code>javac HelloWorld.java
+</code></pre>
+
+<p><img src="/images/bien-dich-java-bang-javac.png" alt="Biên dịch chương trình Java bằng javac" title="Biên dịch chương trình Java bằng javac" class="img-fluid"></p>
+
+<p>Sau khi biên dịch thành công bạn sẽ nhận được file HelloWorld.class được tạo ra trong cùng thư mục như hình bên dưới.</p>
+
+<p><img src="/images/file-class-sau-khi-bien-dich-hello-world.png" alt="File .class được tạo ra khi biên dịch" title="File .class được tạo ra khi biên dịch" class="img-fluid"></p>
+
+<p>Tiếp theo để chạy chương trình vừa được biên dịch chúng ta dùng lệnh</p>
+
+<pre><code>java HelloWorld
+</code></pre>
+
+<p>Khi chương trình thực thi thành công bạn sẽ nhận được kêt quả là chương trình in ra màn hình dòng chữ Hello World như hình bên dưới.</p>
+
+<p><img src="/images/chay-chuong-trinh-java-hello-world.png" alt="Chạy chương trình Java bằng lệnh java" title="Chạy chương trình Java bằng lệnh java" class="img-fluid"></p>
+
+<p>Happy Coding 😊</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://kynanglaptrinh.com/tag/java">Java</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="fb-comments" data-href="https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/" data-numposts="5"></div>
+            </div>
+        </div>
+    </div>
+</section><footer class="blog-footer">
+    <p>© 2019 - Bản quyền của <a href="https://kynanglaptrinh.com/">kynanglaptrinh.com</a>.</p>
+</footer>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=423024851846198&autoLogAppEvents=1"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137812561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137812561-1');
+</script>
+      </div>
+    </body>
+</html>
