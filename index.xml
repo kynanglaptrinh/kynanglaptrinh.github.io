@@ -6,10 +6,20 @@
     <description>Recent content on Kỹ Năng Lập Trình</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-vn</language>
-    <lastBuildDate>Mon, 15 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 16:26:21 +0700</lastBuildDate>
     
 	<atom:link href="https://kynanglaptrinh.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tạo Ứng Dụng Web Với Spring Boot Sử Dụng Spring Tool</title>
+      <link>https://kynanglaptrinh.com/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool/</link>
+      <pubDate>Sat, 15 Feb 2020 16:26:21 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool/</guid>
+      <description>Spring Tool là bộ công cụ cho phép lập trình viên dễ dàng phát triển ứng dụng với Spring Framework. Spring Tool được hỗ trợ trên công cụ Eclipse, Visual Studio Code và Theia IDE. Trong bài viết này tôi sẽ hướng dẫn bạn từng bước để tạo một ứng dụng web sử dụng Spring Tool cho Eclipse.
+Trước tiên bạn cần tải về bộ công cụ Spring Tool hoàn toàn miễn phí tại spring.</description>
+    </item>
     
     <item>
       <title>Viết Chương Trình Java Hello World với Notepad và Command Line</title>

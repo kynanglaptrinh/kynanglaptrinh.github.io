@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="vi"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tạo Ứng Dụng Web Với Spring Boot Sử Dụng Spring Tool</title>
+    <meta name="title" content="Tạo Ứng Dụng Web Với Spring Boot Sử Dụng Spring Tool">
+    <meta name="description" content="Spring Tool là bộ công cụ cho phép lập trình viên dễ dàng phát triển ứng dụng với Spring Framework. Spring Tool được hỗ trợ trên công cụ Eclipse, Visual Studio Code và Theia IDE. Trong bài viết này tôi sẽ hướng dẫn bạn từng bước để tạo một ứng dụng web sử dụng Spring Tool cho Eclipse.">
+    <meta name="author" content="kynanglaptrinh.com@gmail.com">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kynanglaptrinh.com/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool/">
+    <meta property="og:title" content="Tạo Ứng Dụng Web Với Spring Boot Sử Dụng Spring Tool">
+    <meta property="og:description" content="Spring Tool là bộ công cụ cho phép lập trình viên dễ dàng phát triển ứng dụng với Spring Framework. Spring Tool được hỗ trợ trên công cụ Eclipse, Visual Studio Code và Theia IDE. Trong bài viết này tôi sẽ hướng dẫn bạn từng bước để tạo một ứng dụng web sử dụng Spring Tool cho Eclipse.">
+    <meta property="og:image" content="https://kynanglaptrinh.com/images/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool.png">
+
+    <meta property="twitter:card" content="https://kynanglaptrinh.com/images/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool.png">
+    <meta property="twitter:url" content="https://kynanglaptrinh.com/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool/">
+    <meta property="twitter:title" content="Tạo Ứng Dụng Web Với Spring Boot Sử Dụng Spring Tool">
+    <meta property="twitter:description" content="Spring Tool là bộ công cụ cho phép lập trình viên dễ dàng phát triển ứng dụng với Spring Framework. Spring Tool được hỗ trợ trên công cụ Eclipse, Visual Studio Code và Theia IDE. Trong bài viết này tôi sẽ hướng dẫn bạn từng bước để tạo một ứng dụng web sử dụng Spring Tool cho Eclipse.">
+    <meta property="twitter:image" content="https://kynanglaptrinh.com/images/tao-ung-dung-web-voi-spring-boot-su-dung-spring-tool.png">
+    <link href="https://kynanglaptrinh.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://kynanglaptrinh.com/css/style.min.css?version=1" integrity="" media="screen" />
+</head><body>
+            <div class="container"><header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-left">
+            <a href="https://kynanglaptrinh.com/">
+                <img src="https://kynanglaptrinh.com/images/logo.png" alt="logo" width="200px" />
+            </a>
+        </div>
+    </div>
+</header>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex main-menu">
+        <a class="p-2" href="https://kynanglaptrinh.com/">Trang Chủ</a>        
+        <a class="p-2" href="https://kynanglaptrinh.com/lap-trinh-java/">Lập Trình Java</a>
+        <a class="p-2" href="https://kynanglaptrinh.com/spring-boot/">Spring Boot</a>
+    </nav>
+</div>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Tạo Ứng Dụng Web Với Spring Boot Sử Dụng Spring Tool</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Spring Tool là bộ công cụ cho phép lập trình viên dễ dàng phát triển ứng dụng với Spring Framework. Spring Tool được hỗ trợ trên công cụ Eclipse, Visual Studio Code và Theia IDE. Trong bài viết này tôi sẽ hướng dẫn bạn từng bước để tạo một ứng dụng web sử dụng Spring Tool cho Eclipse.</p>
+
+<p>Trước tiên bạn cần tải về bộ công cụ Spring Tool hoàn toàn miễn phí tại <a href="https://spring.io/tools" target="_blank">spring.io/tools</a></p>
+
+<h4 id="tạo-dự-án-web-với-spring-boot">Tạo dự án Web với Spring Boot</h4>
+
+<p>Sau khi tải ứng dụng Spring Tool cho Eclipse và khởi động ứng dụng Spring Tool như hình bên dưới.</p>
+
+<p><img src="/images/spring-tool-tao-project.png" alt="Spring Tool" title="Spring Tool" class="img-fluid"></p>
+
+<p>Để khởi tạo một ứng dụng mới, chọn menu File &gt; New &gt; Spring Starter Project</p>
+
+<p><img src="/images/spring-tool-menu-tao-du-an-moi.png" alt="Spring Tool menu tạo dự án mới" title="Spring Tool menu tạo dự án mới" class="img-fluid"></p>
+
+<p>Từ cửa sổ New Spring Starter Project nhập vào thông tin dự án và chọn Next.</p>
+
+<p><img src="/images/spring-tool-nhap-thong-tin-du-an.png" alt="Spring Tool nhập thông tin dự án" title="Spring Tool nhập thông tin dự án" class="img-fluid"></p>
+
+<p>Từ cửa sổ New Spring Starter Project Dependencies chọn Thymeleaf, Spring Web và click vào Finish.</p>
+
+<p><img src="/images/spring-tool-chon-dependencies.png" alt="Spring Tool chọn dependencies" title="Spring Tool chọn dependencies" class="img-fluid"></p>
+
+<p>Sau khi hoàn thành các bước tạo ứng dụng mới như trên Spring Tool sẽ tạo một ứng dụng Spring Boot với cấu trúc như hình bên dưới.
+<img src="/images/spring-tool-du-an.png" alt="Spring Tool dự án" title="Spring Tool dự án" class="img-fluid"></p>
+
+<h4 id="lập-trình-một-trang-web-đơn-giản-với-spring-mvc">Lập Trình Một Trang Web Đơn Giản với Spring MVC</h4>
+
+<p>Bước đầu tiên hãy tạo một package mới cho ứng dụng của bạn để chứa các class controller của Spring MVC.</p>
+
+<p>Click phải vào package com.kynanglaptrinh.web và chọn New &gt; Package</p>
+
+<p><img src="/images/spring-tool-tao-package.png" alt="Spring Tool tạo package" title="Spring Tool tạo package" class="img-fluid"></p>
+
+<p>Từ cửa sổ New Java Package nhập vào tên package mới như hình bên dưới và chọn Finish.</p>
+
+<p><img src="/images/spring-tool-package-moi.png" alt="Spring Tool tạo package mới" title="Spring Tool tạo package mới" class="img-fluid"></p>
+
+<p>Tiếp theo để tạo class controller click phải vào package com.kynanglaptrinh.web.controller và chọn New &gt; Class</p>
+
+<p><img src="/images/spring-tool-tao-class.png" alt="Spring Tool tạo class" title="Spring Tool tạo class" class="img-fluid"></p>
+
+<p>Từ cửa sổ New Java Class nhập vào tên class mới IndexController và chọn Finish</p>
+
+<p><img src="/images/spring-tool-tao-controller-class.png" alt="Spring Tool tạo controller class" title="Spring Tool tạo controller class" class="img-fluid"></p>
+
+<p>Viết code cho IndexController.java bạn vừa tạo như bên dưới.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.example.web.controller<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.ui.Model<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.GetMapping<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IndexController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">index</span><span style="color:#f92672">(</span>Model model<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		model<span style="color:#f92672">.</span><span style="color:#a6e22e">addAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;message&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Chào mừng bạn đến với Kỹ Năng Lập Trình&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Tiếp theo để tạo file HTML, click phải vào thư mục templates và chọn New &gt; File</p>
+
+<p><img src="/images/spring-tool-tao-file.png" alt="Spring Tool tạo file" title="Spring Tool tạo file" class="img-fluid"></p>
+
+<p>Từ cửa sổ Create New File nhập vào tên file index.html và chọn Finish.</p>
+
+<p><img src="/images/spring-tool-tao-file-index.png" alt="Spring Tool tạo file index.html" title="Spring Tool tạo file inde.html" class="img-fluid"></p>
+
+<p>Viết code cho index.html bạn vừa tạp như sau.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE HTML&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#a6e22e">xmlns:th</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.thymeleaf.org&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Kỹ Năng Lập Trình&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+&lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${message}&#34;</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+
+<h4 id="biên-dịch-và-khởi-chạy-ứng-dụng-spring-boot-trên-spring-tool">Biên dịch và khởi chạy ứng dụng Spring Boot trên Spring Tool</h4>
+
+<p>Để khởi chạy ứng dụng vừa tạo trên Spring Tool bạn mở file WebApplication.java sau đó click vào icon Run và chọn Run As &gt; Spring Boot App</p>
+
+<p><img src="/images/spring-tool-run.png" alt="Spring Tool Run" title="Spring Tool Run" class="img-fluid"></p>
+
+<p>Sau khi ứng dụng khởi chạy thành công bạn sẽ nhận được kết quả log của Spring Boot vào cửa sổ Console như sau.</p>
+
+<p><img src="/images/spring-tool-run-thanh-cong.png" alt="Spring Tool Run thành công" title="Spring Tool Run thành công" class="img-fluid"></p>
+
+<p>Chú ý Spring Boot đã khởi chạy ứng dụng web ở cổng 8080. Để kiểm tra kết quả bạn khởi động trình duyệt và mở địa chỉ web <a href="http://localhost:8080/">http://localhost:8080/</a> và nhận được kết quả trang web như bên sau.</p>
+
+<p><img src="/images/spring-tool-web.png" alt="Spring Tool Web" title="Spring Tool Web" class="img-fluid"></p>
+
+<p>Download Source Code</p>
+
+<p><a href="https://github.com/kynanglaptrinh/SimpleSpringBootWeb/archive/1.0.zip" class="btn btn-primary">Download</a></p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://kynanglaptrinh.com/tag/java">Java</a>
+                                
+                                <a href="https://kynanglaptrinh.com/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://kynanglaptrinh.com/tag/java-web">Java Web</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="fb-comments" data-href="https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/" data-numposts="5"></div>
+            </div>
+        </div>
+    </div>
+</section><footer class="blog-footer">
+    <p>© 2019 - Bản quyền của <a href="https://kynanglaptrinh.com/">kynanglaptrinh.com</a>.</p>
+</footer>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=423024851846198&autoLogAppEvents=1"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137812561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137812561-1');
+</script>
+      </div>
+    </body>
+</html>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Kỹ Năng Lập Trình</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-vn</language>
-    <lastBuildDate>Mon, 15 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 16:26:21 +0700</lastBuildDate>
     
 	<atom:link href="https://kynanglaptrinh.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>Java</title>
       <link>https://kynanglaptrinh.com/tag/java/</link>
-      <pubDate>Mon, 15 Apr 2019 14:00:00 +0700</pubDate>
+      <pubDate>Sat, 15 Feb 2020 16:26:21 +0700</pubDate>
       
       <guid>https://kynanglaptrinh.com/tag/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java Web</title>
+      <link>https://kynanglaptrinh.com/tag/java-web/</link>
+      <pubDate>Sat, 15 Feb 2020 16:26:21 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/tag/java-web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://kynanglaptrinh.com/tag/spring-boot/</link>
+      <pubDate>Sat, 15 Feb 2020 16:26:21 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/tag/spring-boot/</guid>
       <description></description>
     </item>
     
