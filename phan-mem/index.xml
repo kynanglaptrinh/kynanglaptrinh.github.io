@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phan Mem on Kỹ Năng Lập Trình</title>
+    <link>https://kynanglaptrinh.com/phan-mem/</link>
+    <description>Recent content in Phan Mem on Kỹ Năng Lập Trình</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Sun, 16 Feb 2020 14:22:42 +0700</lastBuildDate>
+    
+	<atom:link href="https://kynanglaptrinh.com/phan-mem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hướng dẫn cài đặt và sử dụng Notepad&#43;&#43;</title>
+      <link>https://kynanglaptrinh.com/huong-dan-cai-dat-va-su-dung-notepad-/</link>
+      <pubDate>Sun, 16 Feb 2020 14:22:42 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/huong-dan-cai-dat-va-su-dung-notepad-/</guid>
+      <description>Notepad++ là gì? Notepad++ là một phần mềm soạn thảo mã nguồn miễn phí chạy trên hệ điều hành Windows. Notepad++ được phát triển bởi Don Ho, bạn có thể tham khảo thêm thông tin tác giả tại notepad-plus-plus.org/author/
+Notepad++ rất phổ biến trong cộng đồng lập trình viên nhờ vào ưu điểm tốc độ thực thi chương trình nhanh, giao diện đơn giản, dung lượng phần mềm nhỏ gọn và được cập nhật rất thường xuyên bởi tác giả.</description>
+    </item>
+    
+  </channel>
+</rss>
