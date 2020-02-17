@@ -6,10 +6,20 @@
     <description>Recent content in Lap Trinh Java on Kỹ Năng Lập Trình</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-vn</language>
-    <lastBuildDate>Mon, 15 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 18 Feb 2020 01:31:03 +0700</lastBuildDate>
     
 	<atom:link href="https://kynanglaptrinh.com/lap-trinh-java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maven là gì? Hướng dẫn cài đặt Maven trên Windows</title>
+      <link>https://kynanglaptrinh.com/maven-la-gi-huong-dan-cai-dat-maven-tren-windows/</link>
+      <pubDate>Tue, 18 Feb 2020 01:31:03 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/maven-la-gi-huong-dan-cai-dat-maven-tren-windows/</guid>
+      <description>Maven là gì? Apache Maven là một công cụ cho phép lập trình viên chuẩn hóa việc quản lý mã nguồn của một dự án Java.
+Maven hỗ trợ lập trình viên từ các bước tạo lập dự án Java, quản lý thư viện được sử dụng trong dự án (hay còn gọi dependencies), quản lý phiên bản, đến việc biên dịch, kiểm thử (unit test) mã nguồn và đóng gói dự án.</description>
+    </item>
     
     <item>
       <title>Viết Chương Trình Java Hello World với Notepad và Command Line</title>

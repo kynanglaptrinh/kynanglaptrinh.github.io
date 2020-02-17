@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Maven là gì? Hướng dẫn cài đặt Maven trên Windows</title>
+    <meta name="title" content="Maven là gì? Hướng dẫn cài đặt Maven trên Windows">
+    <meta name="description" content="Apache Maven là một công cụ cho phép lập trình viên chuẩn hóa việc quản lý mã nguồn của một dự án Java. Maven hỗ trợ lập trình viên từ các bước tạo lập dự án Java, quản lý thư viện được sử dụng trong dự án (hay còn gọi dependencies), quản lý phiên bản, đến việc biên dịch, kiểm thử (unit test) mã nguồn và đóng gói dự án.">
+    <meta name="author" content="kynanglaptrinh.com@gmail.com">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kynanglaptrinh.com/maven-la-gi-huong-dan-cai-dat-maven-tren-windows/">
+    <meta property="og:title" content="Maven là gì? Hướng dẫn cài đặt Maven trên Windows">
+    <meta property="og:description" content="Apache Maven là một công cụ cho phép lập trình viên chuẩn hóa việc quản lý mã nguồn của một dự án Java. Maven hỗ trợ lập trình viên từ các bước tạo lập dự án Java, quản lý thư viện được sử dụng trong dự án (hay còn gọi dependencies), quản lý phiên bản, đến việc biên dịch, kiểm thử (unit test) mã nguồn và đóng gói dự án.">
+    <meta property="og:image" content="https://kynanglaptrinh.com/images/maven-la-gi-huong-dan-cai-dat-maven-tren-windows.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kynanglaptrinh.com/maven-la-gi-huong-dan-cai-dat-maven-tren-windows/">
+    <meta property="twitter:title" content="Maven là gì? Hướng dẫn cài đặt Maven trên Windows">
+    <meta property="twitter:description" content="Apache Maven là một công cụ cho phép lập trình viên chuẩn hóa việc quản lý mã nguồn của một dự án Java. Maven hỗ trợ lập trình viên từ các bước tạo lập dự án Java, quản lý thư viện được sử dụng trong dự án (hay còn gọi dependencies), quản lý phiên bản, đến việc biên dịch, kiểm thử (unit test) mã nguồn và đóng gói dự án.">
+    <meta property="twitter:image" content="https://kynanglaptrinh.com/images/maven-la-gi-huong-dan-cai-dat-maven-tren-windows.png">
+    <link href="https://kynanglaptrinh.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://kynanglaptrinh.com/css/style.min.css?version=1" integrity="" media="screen" />
+</head><body>
+            <div class="container"><header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-left">
+            <a href="https://kynanglaptrinh.com/">
+                <img src="https://kynanglaptrinh.com/images/logo.png" alt="logo" width="200px" />
+            </a>
+        </div>
+    </div>
+</header>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex main-menu">
+        <a class="p-2" href="https://kynanglaptrinh.com/">Trang Chủ</a>        
+        <a class="p-2" href="https://kynanglaptrinh.com/lap-trinh-java/">Lập Trình Java</a>
+        <a class="p-2" href="https://kynanglaptrinh.com/spring-boot/">Spring Boot</a>
+        <a class="p-2" href="https://kynanglaptrinh.com/phan-mem/">Phần Mềm</a>
+    </nav>
+</div>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Maven là gì? Hướng dẫn cài đặt Maven trên Windows</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="maven-là-gì">Maven là gì?</h4>
+
+<p>Apache Maven là một công cụ cho phép lập trình viên chuẩn hóa việc quản lý mã nguồn của một dự án Java.</p>
+
+<p>Maven hỗ trợ lập trình viên từ các bước tạo lập dự án Java, quản lý thư viện được sử dụng trong dự án (hay còn gọi dependencies), quản lý phiên bản, đến việc biên dịch, kiểm thử (unit test) mã nguồn và đóng gói dự án.</p>
+
+<h4 id="hướng-dẫn-cài-đặt-maven-trên-hệ-điều-hành-windows">Hướng dẫn cài đặt Maven trên hệ điều hành Windows</h4>
+
+<p>Trước tiên bạn cần tải về Maven từ đường dẫn bên dưới</p>
+
+<p><a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip" class="btn btn-primary">Download</a>
+<download button></p>
+
+<p>Hoặc vào trang chủ của Maven để tải về phiên bản mới nhất tại <a href=" https://maven.apache.org/download.cgi" target="_blank">maven.apache.org/download.cgi</a></p>
+
+<p>Sau khi tải về và giải nén Maven vào một thư mục trên máy tính của bạn, ví dụ C:\tools</p>
+
+<p><img src="/images/maven-download.png" alt="Download Maven" title="Download Maven" class="img-fluid"></p>
+
+<p>Sau đó click phải vào biểu tượng Computer trên màn hình desktop hoặc biểu tượng My PC trên File Explorer và chọn Properties.</p>
+
+<p><img src="/images/maven-computer-properties.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Từ cửa sổ System, click vào Advanced system settings</p>
+
+<p><img src="/images/maven-advance-system-settings.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Từ cửa sổ System Properties, click vào Environment Variables…</p>
+
+<p><img src="/images/maven-system-properties.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Từ cửa sổ Environment Variables, click vào New…</p>
+
+<p><img src="/images/maven-environment-variable.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Từ cửa sổ New System Variable, nhập vào thông tin đường dẫn đến thư mục Maven bạn đã tải về ở các bước trước và click OK.</p>
+
+<ul>
+<li>Variable name: MAVEN_HOME</li>
+<li>Variable value: C:\tools\apache-maven-3.6.3</li>
+</ul>
+
+<p><img src="/images/maven-new-system-variable.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Sau khi thêm thành công System Variable, bạn click vào System Variable có tên Path như hình bên dưới và click vào Edit</p>
+
+<p><img src="/images/maven-edit-system-variable.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Từ cửa sổ Edit environment variable, click vào New.</p>
+
+<p><img src="/images/maven-edit-system-variable-new.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Sau đó nhập vào giá trị %MAVEN_HOME%\bin như hình bên dưới và click vào OK.</p>
+
+<p><img src="/images/maven-edit-system-variable-new-input.png" alt="Cài đặt Maven trên Windows" title="Cài đặt Maven trên Windows" class="img-fluid"></p>
+
+<p>Vậy là bạn đã cấu hình thành công Maven trên hệ điều hành Windows, để kiểm tra kết quả hãy mở chương trình Command Line và nhập vào command bên dưới để xem phiên bản Maven vừa được cài đặt trên hệ điều hành Windows của bạn.</p>
+
+<pre><code>mvn -version 
+</code></pre>
+
+<p><img src="/images/maven-version.png" alt="Maven version" title="Maven version" class="img-fluid"></p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://kynanglaptrinh.com/tag/java">Java</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="fb-comments" data-href="https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/" data-numposts="5"></div>
+            </div>
+        </div>
+    </div>
+</section><footer class="blog-footer">
+    <p>© 2019-2020 - Bản quyền thuộc về <a href="https://kynanglaptrinh.com/">kynanglaptrinh.com</a>.</p>
+</footer>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=423024851846198&autoLogAppEvents=1"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137812561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137812561-1');
+</script>
+      </div>
+    </body>
+</html>
