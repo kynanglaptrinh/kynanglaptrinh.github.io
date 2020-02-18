@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="vi"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line</title>
+    <meta name="title" content="Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line">
+    <meta name="description" content="Để giúp đơn giản hóa quá trình khởi tạo một dự án Java, Maven cung cấp công cụ archetype. Một archetype có thể hiểu là một bản mẫu dự án Java được dựng sẵn để giúp lập trình viên tiết kiệm thời gian cấu hình một dự án mới. Trong bài viết này chúng ta sẽ tìm hiểu từng bước sử dụng Maven trên Command Line để khởi tạo một dự án Java đơn giản sau đó biên dịch và đóng gói dự án ra file .jar">
+    <meta name="author" content="kynanglaptrinh.com@gmail.com">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kynanglaptrinh.com/huong-dan-khoi-tao-va-dong-goi-du-an-java-bang-maven-tren-command-line/">
+    <meta property="og:title" content="Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line">
+    <meta property="og:description" content="Để giúp đơn giản hóa quá trình khởi tạo một dự án Java, Maven cung cấp công cụ archetype. Một archetype có thể hiểu là một bản mẫu dự án Java được dựng sẵn để giúp lập trình viên tiết kiệm thời gian cấu hình một dự án mới. Trong bài viết này chúng ta sẽ tìm hiểu từng bước sử dụng Maven trên Command Line để khởi tạo một dự án Java đơn giản sau đó biên dịch và đóng gói dự án ra file .jar">
+    <meta property="og:image" content="https://kynanglaptrinh.com/images/huong-dan-khoi-tao-va-dong-goi-du-an-java-bang-maven-tren-command-line.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kynanglaptrinh.com/huong-dan-khoi-tao-va-dong-goi-du-an-java-bang-maven-tren-command-line/">
+    <meta property="twitter:title" content="Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line">
+    <meta property="twitter:description" content="Để giúp đơn giản hóa quá trình khởi tạo một dự án Java, Maven cung cấp công cụ archetype. Một archetype có thể hiểu là một bản mẫu dự án Java được dựng sẵn để giúp lập trình viên tiết kiệm thời gian cấu hình một dự án mới. Trong bài viết này chúng ta sẽ tìm hiểu từng bước sử dụng Maven trên Command Line để khởi tạo một dự án Java đơn giản sau đó biên dịch và đóng gói dự án ra file .jar">
+    <meta property="twitter:image" content="https://kynanglaptrinh.com/images/huong-dan-khoi-tao-va-dong-goi-du-an-java-bang-maven-tren-command-line.png">
+    <link href="https://kynanglaptrinh.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://kynanglaptrinh.com/css/style.min.css?version=1" integrity="" media="screen" />
+</head><body>
+            <div class="container"><header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-left">
+            <a href="https://kynanglaptrinh.com/">
+                <img src="https://kynanglaptrinh.com/images/logo.png" alt="logo" width="200px" />
+            </a>
+        </div>
+    </div>
+</header>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex main-menu">
+        <a class="p-2" href="https://kynanglaptrinh.com/">Trang Chủ</a>        
+        <a class="p-2" href="https://kynanglaptrinh.com/lap-trinh-java/">Lập Trình Java</a>
+        <a class="p-2" href="https://kynanglaptrinh.com/spring-boot/">Spring Boot</a>
+        <a class="p-2" href="https://kynanglaptrinh.com/phan-mem/">Phần Mềm</a>
+    </nav>
+</div>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Để giúp đơn giản hóa quá trình khởi tạo một dự án Java, Maven cung cấp công cụ archetype. Một archetype có thể hiểu là một bản mẫu dự án Java được dựng sẵn để giúp lập trình viên tiết kiệm thời gian cấu hình một dự án mới. Trong bài viết này chúng ta sẽ tìm hiểu từng bước sử dụng Maven trên Command Line để khởi tạo một dự án Java đơn giản sau đó biên dịch và đóng gói dự án ra file .jar</p>
+
+<h4 id="tạo-dự-án-mới-sử-dụng-mvn-archetype-generate">Tạo dự án mới sử dụng mvn archetype:generate</h4>
+
+<p>Để khởi tạo dự án Java mới bạn cần cung cấp những thông tin sau</p>
+
+<ul>
+<li>groupId</li>
+<li>artifactId</li>
+<li>archetypeArtifactId</li>
+<li>interactiveMode</li>
+</ul>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\&gt;mvn archetype:generate -DgroupId=com.kynanglaptrinh -DartifactId=SimpleApp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+D:\
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------&lt; org.apache.maven:standalone-pom &gt;-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] &gt;&gt;&gt; maven-archetype-plugin:3.1.2:generate (default-cli) &gt; generate-sources @ standalone-pom &gt;&gt;&gt;
+[INFO]
+[INFO] &lt;&lt;&lt; maven-archetype-plugin:3.1.2:generate (default-cli) &lt; generate-sources @ standalone-pom &lt;&lt;&lt;
+[INFO]
+[INFO]
+[INFO] --- maven-archetype-plugin:3.1.2:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: basedir, Value: D:\
+[INFO] Parameter: package, Value: com.kynanglaptrinh
+[INFO] Parameter: groupId, Value: com.kynanglaptrinh
+[INFO] Parameter: artifactId, Value: SimpleApp
+[INFO] Parameter: packageName, Value: com.kynanglaptrinh
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: D:\SimpleApp
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:48 min
+[INFO] Finished at: 2020-02-18T23:35:46+07:00
+[INFO] ------------------------------------------------------------------------</code></pre></div>
+
+<p>Cấu trúc dự án Java vừa được tạo</p>
+
+<p><img src="/images/maven-tao-du-an-java-bang-archetype-generate.png" alt="Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line" title="Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line" class="img-fluid"></p>
+
+<p>Để tiếp tục các thao tác khác trên dự án vừa tạo, cd vào thư mục SimpleApp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\&gt;cd SimpleApp
+
+D:\SimpleApp&gt;</code></pre></div></p>
+
+<h4 id="biên-dịch-dự-án-java-sử-dụng-mvn-compile">Biên dịch dự án Java sử dụng mvn compile</h4>
+
+<p>Kết quả biên dịch các tập tin bytecode sẽ được tạo trong thư mục target.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\SimpleApp&gt;mvn compile
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------&lt; com.kynanglaptrinh:SimpleApp &gt;--------------------
+[INFO] Building SimpleApp 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleApp ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to D:\SimpleApp\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.703 s
+[INFO] Finished at: 2020-02-18T23:39:21+07:00
+[INFO] ------------------------------------------------------------------------
+
+D:\SimpleApp&gt;</code></pre></div></p>
+
+<h4 id="đóng-gói-dự-án-tạo-tập-tin-jar-sử-dụng-mvn-package">Đóng gói dự án, tạo tập tin .jar sử dụng mvn package</h4>
+
+<p>Sau khi chạy câu lệnh bên dưới tập tin SimpleApp-1.0-SNAPSHOT.jar sẽ được tạo trong thư mục target.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\SimpleApp&gt;mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------&lt; com.kynanglaptrinh:SimpleApp &gt;--------------------
+[INFO] Building SimpleApp 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ SimpleApp ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to D:\SimpleApp\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ SimpleApp ---
+[INFO] Surefire report directory: D:\SimpleApp\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.kynanglaptrinh.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ SimpleApp ---
+[INFO] Building jar: D:\SimpleApp\target\SimpleApp-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.796 s
+[INFO] Finished at: 2020-02-18T23:39:45+07:00
+[INFO] ------------------------------------------------------------------------
+
+D:\SimpleApp&gt;</code></pre></div></p>
+
+<h4 id="kiểm-thử-dự-án-unit-testing-sử-dụng-mvn-test">Kiểm thử dự án (unit testing) sử dụng mvn test</h4>
+
+<p>Câu lệnh sau sẽ thực thi các unit test class trong dự án và cho kết quả sau khi hoàn thành.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\SimpleApp&gt;mvn test
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------&lt; com.kynanglaptrinh:SimpleApp &gt;--------------------
+[INFO] Building SimpleApp 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ SimpleApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ SimpleApp ---
+[INFO] Surefire report directory: D:\SimpleApp\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.kynanglaptrinh.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.972 s
+[INFO] Finished at: 2020-02-18T23:40:09+07:00
+[INFO] ------------------------------------------------------------------------
+
+D:\SimpleApp&gt;</code></pre></div></p>
+
+<h4 id="xóa-thông-tin-trong-thư-mục-target-sử-dụng-mvn-clean">Xóa thông tin trong thư mục target sử dụng mvn clean</h4>
+
+<p>Sau khi chạy câu lệnh sau Maven sẽ xóa thư mục target.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\SimpleApp&gt;mvn clean
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------&lt; com.kynanglaptrinh:SimpleApp &gt;--------------------
+[INFO] Building SimpleApp 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ SimpleApp ---
+[INFO] Deleting D:\SimpleApp\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.172 s
+[INFO] Finished at: 2020-02-18T23:40:21+07:00
+[INFO] ------------------------------------------------------------------------
+
+D:\SimpleApp&gt;</code></pre></div></p>
+
+<h4 id="kết-hợp-nhiều-tác-vụ">Kết hợp nhiều tác vụ</h4>
+
+<p>Maven cũng cho phép kết hợp nhiều tác vụ trong cùng một câu lệnh như ví dụ bên dưới.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">D:\SimpleApp&gt;mvn clean test package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------&lt; com.kynanglaptrinh:SimpleApp &gt;--------------------
+[INFO] Building SimpleApp 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ SimpleApp ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleApp ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to D:\SimpleApp\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ SimpleApp ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to D:\SimpleApp\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ SimpleApp ---
+[INFO] Surefire report directory: D:\SimpleApp\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.kynanglaptrinh.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SimpleApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\SimpleApp\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ SimpleApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ SimpleApp ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ SimpleApp ---
+[INFO] Building jar: D:\SimpleApp\target\SimpleApp-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.484 s
+[INFO] Finished at: 2020-02-18T23:40:39+07:00
+[INFO] ------------------------------------------------------------------------
+
+D:\SimpleApp&gt;</code></pre></div></p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://kynanglaptrinh.com/tag/java">Java</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="fb-comments" data-href="https://kynanglaptrinh.com/chuong-trinh-java-hello-world-notepad-command-line/" data-numposts="5"></div>
+            </div>
+        </div>
+    </div>
+</section><footer class="blog-footer">
+    <p>© 2019-2020 - Bản quyền thuộc về <a href="https://kynanglaptrinh.com/">kynanglaptrinh.com</a>.</p>
+</footer>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=423024851846198&autoLogAppEvents=1"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137812561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137812561-1');
+</script>
+      </div>
+    </body>
+</html>

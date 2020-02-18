@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Kỹ Năng Lập Trình</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-vn</language>
-    <lastBuildDate>Tue, 18 Feb 2020 01:31:03 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 18 Feb 2020 23:54:58 +0700</lastBuildDate>
     
 	<atom:link href="https://kynanglaptrinh.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hướng dẫn khởi tạo và đóng gói dự án Java bằng Maven trên Command Line</title>
+      <link>https://kynanglaptrinh.com/huong-dan-khoi-tao-va-dong-goi-du-an-java-bang-maven-tren-command-line/</link>
+      <pubDate>Tue, 18 Feb 2020 23:54:58 +0700</pubDate>
+      
+      <guid>https://kynanglaptrinh.com/huong-dan-khoi-tao-va-dong-goi-du-an-java-bang-maven-tren-command-line/</guid>
+      <description>Để giúp đơn giản hóa quá trình khởi tạo một dự án Java, Maven cung cấp công cụ archetype. Một archetype có thể hiểu là một bản mẫu dự án Java được dựng sẵn để giúp lập trình viên tiết kiệm thời gian cấu hình một dự án mới. Trong bài viết này chúng ta sẽ tìm hiểu từng bước sử dụng Maven trên Command Line để khởi tạo một dự án Java đơn giản sau đó biên dịch và đóng gói dự án ra file .</description>
+    </item>
     
     <item>
       <title>Maven là gì? Hướng dẫn cài đặt Maven trên Windows</title>
